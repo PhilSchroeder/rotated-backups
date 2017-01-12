@@ -121,7 +121,7 @@ start=`date +%s`
 start_full=`date`
 log "Starting backup in $BACKUP_DIR at $start_full" 
 log "rsync -rav -delete --filter='merge $INCLUDE' / $CURRENT"
-rsync -rav -delete --filter='merge $INCLUDE' / $CURRENT
+rsync -rav -delete --filter="merge $INCLUDE" / $CURRENT
 stop=`date +%s`
 stop_full=`date`
 
